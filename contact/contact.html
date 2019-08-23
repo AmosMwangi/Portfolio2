@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Amos Mwangi</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="contact.css">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+<!-- small icon -->
+<link rel="icon" type="image/ico" href="9.jpg" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+<!-- // -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+        <div id="wrapper">
+				<div class="overlay"></div>
+			
+				<!-- Sidebar -->
+				<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+					<div class="nav sidebar-nav">
+						<li class="sidebar-brand">
+							<img src="https://image.freepik.com/free-vector/bussiness-person-icon-image_24911-43617.jpg" class="img-fluid " style="height: 66px; border-radius: 50%; margin: 50px; margin-left: 60px;" alt="">
+						</li>
+						<li style="margin-top: 90px;">
+							<a href="/index.html">HOME</a>
+						</li>
+						<li>
+							<a href="/about/about.html">ABOUT</a>
+						</li>
+
+					</div>
+				</nav>
+		
+				<!-- Page Content -->
+				<div id="page-content-wrapper">
+					<button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+						<span class="hamb-top"></span>
+						<span class="hamb-middle"></span>
+						<span class="hamb-bottom"></span>
+					</button>
+				</div>
+
+                <!-- content cards -->
+                
+                <section>
+                    <div class="container">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img id="card-img" class="img-fluid" src="https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif" alt="...">
+                                <img id="profile" class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_0XDrjxsypQtuS_vQUBRwQGYcv04X6MxxxCXuEFAtYCr-0Y1Mw" class="profile-img" alt="">
+                                <h1>Amos Mwangi</h1>
+                                <p>Web Designer</p>
+                                <a href="#" class="btn">Contact</a>
+                                <ul class="social-media">
+                                    <li>
+                                        <a href="#"><i  class="fab fa-facebook-f icon"></i>    </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter icon"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+				<script>
+					$(document).ready(function () {
+						var trigger = $('.hamburger'),
+							overlay = $('.overlay'),
+							isClosed = false;
+
+							trigger.click(function () {
+							hamburger_cross();      
+							});
+
+							function hamburger_cross() {
+
+							if (isClosed == true) {          
+								overlay.hide();
+								trigger.removeClass('is-open');
+								trigger.addClass('is-closed');
+								isClosed = false;
+							} else {   
+								overlay.show();
+								trigger.removeClass('is-closed');
+								trigger.addClass('is-open');
+								isClosed = true;
+							}
+						}
+						
+						$('[data-toggle="offcanvas"]').click(function () {
+								$('#wrapper').toggleClass('toggled');
+						});  
+						});
+				</script>
+	
+</body>
+</html>                            
